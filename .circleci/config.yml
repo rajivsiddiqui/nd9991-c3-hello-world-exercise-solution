@@ -215,13 +215,13 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       # - welcome/run
-      - print_greetings
-      - upload_file
-      - download_file:
-          requires:
-            - upload_file
-      - create_infrastructure
-      - configure_infrastructure
+#       - print_greetings
+#       - upload_file
+#       - download_file:
+#           requires:
+#             - upload_file
+#       - create_infrastructure
+#       - configure_infrastructure
       - create_and_deploy_front_end
       - promote_to_production:
           requires: 
